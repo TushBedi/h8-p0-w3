@@ -66,10 +66,6 @@ function dataHandling2 () {
     default:
     console.log('Invalid month');
     break;
-
-
-
-
    }
 
   // console.log(arrDate);
