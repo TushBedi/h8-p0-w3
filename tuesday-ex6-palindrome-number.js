@@ -1,5 +1,5 @@
 function palindrome(number) {
-
+  number += 1;
   var isPalindrome = false;
   while (isPalindrome === false) {
     var numberStr = number.toString();
@@ -7,7 +7,6 @@ function palindrome(number) {
       for(var j = numberStr.length-1;j >= 0; j--) {
        reverse += numberStr[j];
       } //  console.log(reverse);
-
       if (reverse === numberStr) {
        isPalindrome = true;
        return number
