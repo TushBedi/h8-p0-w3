@@ -1,16 +1,17 @@
 function checkArithmeticSequence(arr) {
   var checker = 0;
   var output;
-  var increment =[arr[1]-arr[0]];
-  // console.log(increment);
+  var increment = arr[1]-arr[0];
   for(var i = 0; i < arr.length - 1; i++) {
-    if(arr[i+1] - arr[i] == increment) {
+    if(arr[i+1] - arr[i] === increment) {
       checker++;
-    } //console.log(checker);
+    } else {
+      break;
+    }//console.log(checker);
   } if(checker === arr.length - 1) {
     output = true;
   } else {
-    output = false
+    output = false;
   } return output;
 }
 
